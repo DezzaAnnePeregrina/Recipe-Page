@@ -1,0 +1,157 @@
+:root{
+    /* ## Colors
+    ### Primary */
+    --clr-Nutmeg: hsl(14, 45%, 36%);
+    --clr-Dark-Raspberry: hsl(332, 51%, 32%);
+
+    /* ### Neutral */
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Rose-White: hsl(330, 100%, 98%);
+    --clr-Eggshell: hsl(30, 54%, 90%);
+    --clr-Light-Grey: hsl(30, 18%, 87%);
+    --clr-Wenge-Brown: hsl(30, 10%, 34%);
+    --clr-Dark-Charcoal: hsl(24, 5%, 18%);
+
+    /* ## Typography
+    ### Body Copy */
+    --fs-base: 16px;
+
+    /* ### Fonts */
+    --ff-young-serif: "Young Serif", serif;
+    --fw-light:400;
+
+    --ff-outfit: "Outfit", sans-serif;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.fd{
+    display: flex;
+}
+
+.fd-col{
+    flex-direction: column;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-light);
+    color: var(--clr-Dark-Charcoal);
+    font-family: var(--ff-outfit);
+    background-color: var(--clr-Eggshell);
+}
+
+main{
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+    padding: 2.5rem;
+    background-color: var(--clr-White);
+    border-radius: 1.5rem;
+    width: 720px;
+}
+
+img{
+    border-radius: .7rem;
+}
+
+.title-details{
+    gap: 1rem;
+}
+
+.prep-time{
+    background-color: var(--clr-Rose-White);
+    width: 100%;
+    padding: 2rem 3rem;
+    gap: 1rem;
+    border-radius: .7rem;
+}
+
+.prep-time li{
+    margin-left: 1rem;
+}
+
+.ingredients, .instructions, .nutrition{
+    padding: 1rem 0;
+    gap: 1.5rem;
+    width: 100%;
+    border-bottom: 1.5px solid var(--clr-Light-Grey);
+}
+
+.ingredients ul, .instructions ol{
+    gap: 1rem;
+    padding: 0 1.5rem;
+}
+
+.table{
+    border-bottom: 1.5px solid var(--clr-Light-Grey);
+    padding: .5rem 2rem;
+}
+
+.nutrition, .table:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+/* typography */
+h1, h2, h3{
+    font-family: var(--ff-young-serif);
+    font-weight: var(--fw-bolder);
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.details{
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 1.8rem;
+    color: var(--clr-Nutmeg);
+}
+
+h3{
+    font-size: 1.3rem;
+    color: var(--clr-Dark-Raspberry);
+}
+
+ul li{
+    list-style-type: disc;
+    line-height: 1.6;
+    padding-left: 1rem;
+}
+
+ol li{
+    list-style-type: decimal;
+    line-height: 1.6;
+    padding-left: 1rem;
+}
+
+ol span, .prep-time span{
+    font-weight: var(--fw-bolder);
+    color: var(--clr-Wenge-Brown);
+}
+
+li::marker{
+    color: var(--clr-Nutmeg);
+    font-weight: var(--fw-bold);
+}
+
+.table span{
+    flex: 1;
+}
+
+.table span:last-child{
+    color: var(--clr-Nutmeg);
+    font-weight: var(--fw-bolder);
+}
