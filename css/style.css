@@ -40,7 +40,6 @@
 body{
     display: grid;
     place-items: center;
-    min-height: 100vh;
     font-size: var(--fs-base);
     font-weight: var(--fw-light);
     color: var(--clr-Dark-Charcoal);
@@ -79,7 +78,7 @@ img{
 }
 
 .ingredients, .instructions, .nutrition{
-    padding: 1rem 0;
+    padding: 0 0 1.5rem 0;
     gap: 1.5rem;
     width: 100%;
     border-bottom: 1.5px solid var(--clr-Light-Grey);
@@ -97,14 +96,14 @@ img{
 
 .nutrition, .table:last-child{
     border-bottom: none;
-    padding-bottom: 0;
+    padding-bottom: .2rem;
 }
 
 
 /* typography */
-h1, h2, h3{
+h1, h2{
     font-family: var(--ff-young-serif);
-    font-weight: var(--fw-bolder);
+    font-weight: var(--fw-light);
 }
 
 h1{
@@ -122,6 +121,7 @@ h2{
 
 h3{
     font-size: 1.3rem;
+    font-weight: var(--fw-bold);
     color: var(--clr-Dark-Raspberry);
 }
 
