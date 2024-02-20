@@ -50,8 +50,8 @@ body{
 
 main{
     justify-content: center;
-    gap: 1rem;
-    margin: 2rem;
+    gap: 2rem;
+    margin: 5rem;
     padding: 2.5rem;
     background-color: var(--clr-White);
     border-radius: 1.5rem;
